@@ -1,0 +1,35 @@
+# Cloud Sustainability
+
+Energy Efficiency Cloud Providers supports the optimization of data center operations for minimizing energy consumption and improve efficiency.
+
+Renewable Energy On increasing the adoption of renewable energy sources like solar and wind power to data centers and reduce carbon emissions.
+
+Virtualization Server virtualization facilitates better utilization of hardware resources, reducing the need for physical servers and lowering the energy consumptions.
+
+# Cloud Security
+
+Cloud security recommended to measures and practices designed to protect data, applications, and infrastructure in cloud computing environments.
+
+Data Encryption Encryption is essential for securing data stored in the cloud. It ensures that data remains unreadable to unauthorized users even if it is intercepted.
+
+Access Control Implementing strict access controls and authentication mechanisms helps ensure that only authorized users can access sensitive data and resources in the cloud.
+
+Multi-Factor Authentication (MFA) MFA adds an extra layer of security by requiring users to provide multiple forms of verification, such as passwords, biometrics, or security tokens, before gaining access to cloud services.
+
+# Use Cases Of Cloud Computing
+
+Cloud computing provides many use cases across industries and various applications:
+
+Scalable Infrastructure Infrastructure as a Service (IaaS) enables organizations to scale computing resources based on demand without investing in physical hardware.
+
+Efficient Application Development Platform as a Service (PaaS) simplifies application development, offering tools and environments for building, deploying, and managing applications.
+
+Streamlined Software Access Software as a Service (SaaS) provides subscription-based access to software applications over the internet, reducing the need for local installation and maintenance.
+
+Data Analytics Cloud-based platforms facilitate big data analytics, allowing organizations to process and derive insights from large datasets efficiently.
+
+Disaster Recovery Cloud-based disaster recovery solutions offer cost-effective data replication and backup, ensuring quick recovery in case of system failures or disasters.
+
+# What is Virtualization In Cloud Computing?
+
+Virtualization is the software technology that helps in providing the logical isolation of physical resources. Creating logical isolation of physical resources such as RAM, CPU, and Storage.. over the cloud is known as Virtualization in Cloud Computing. In simple we can say creating types of Virtual Instances of computing resources over the cloud. It provides better management and utilization of hardware resources with logical isolation making the applications independent of others. It facilitates streamlining the resource allocation and enhancing scalability for multiple virtual computers within a single physical source offering cost-effectiveness and better optimization of resources.
