@@ -7,6 +7,7 @@ Cloud Computing means storing and accessing the data and programs on remote serv
 Cloud computing helps users in easily accessing computing resources like storage and processing over the internet rather than local hardware. Here we are discussing how it works in a nutshell Infrastructure: Cloud computing depends on remote network servers hosted on internet for store, manage, and process the data.
 On-Demand Access: Users can access cloud services and resources based on-demand they can scale up or down the without having to invest for physical hardware.
 Types of Services: Cloud computing offers various benefits such as cost saving, scalability, reliability and accessibility it reduces capital expenditures, improves efficiency.
+
 # Origins Of Cloud Computing
 
  Mainframe computing in the 1950s and the internet explosion in the 1990s came together to give rise to cloud computing. Since businesses like Amazon, Google, and Salesforce started providing web-based services in the early 2000s. The term "cloud computing" has gained popularity. Scalability, adaptability, and cost-effectiveness are to be facilitated by the concept's on-demand internet-based access to computational resources.
@@ -39,4 +40,15 @@ Even though cloud services are usually dependable, they may also have unexpected
 Cloud computing services heavily rely on Internet connectivity. For accessing the cloud resources the users should have a stable and high-speed internet connection for accessing and using cloud resources. In regions with limited internet connectivity, users may face challenges in accessing their data and applications.
 
 4. Cost Management Complexity
-The main benefit of cloud services is their pricing model that coming with Pay as you go but it also leads to cost management complexities. On without proper careful monitoring and utilization of resources optimization, Organizations may end up with unexpected costs as per their use scale. Understanding and Controlled usage of cloud services requires ongoing attention.
+The main benefit of cloud services is their pricing model that coming with Pay as you go but it also leads to cost management complexities. On without proper careful monitoring and utilization of resources optimization, Organizations may end up with unexpected costs as per their use scale. 
+
+# Characteristics Of Cloud Computing
+
+Scalability With Cloud hosting, it is easy to grow and shrink the number and size of servers based on the need. This is done by either increasing or decreasing the resources in the cloud. This ability to alter plans due to fluctuations in business size and needs is a superb benefit of cloud computing, especially when experiencing a sudden growth in demand.
+
+Save Money An advantage of cloud computing is the reduction in hardware costs. Instead of purchasing in-house equipment, hardware needs are left to the vendor. For companies that are growing rapidly, new hardware can be large, expensive, and inconvenient. Cloud computing alleviates these issues because resources can be acquired quickly and easily. Even better, the cost of repairing or replacing equipment is passed to the vendors. Along with purchase costs, off-site hardware cuts internal power costs and saves space. Large data centers can take up precious office space and produce a large amount of heat. Moving to cloud applications or storage can help maximize space and significantly cut energy expenditures.
+
+Reliability Rather than being hosted on one single instance of a physical server, hosting is delivered on a virtual partition that draws its resource, such as disk space, from an extensive network of underlying physical servers. If one server goes offline it will have no effect on availability, as the virtual servers will continue to pull resources from the remaining network of servers.
+
+Physical Security The underlying physical servers are still housed within data centers and so benefit from the security measures that those facilities implement to prevent people from accessing or disrupting them on-site.
+
