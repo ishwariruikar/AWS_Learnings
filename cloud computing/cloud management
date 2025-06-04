@@ -1,0 +1,51 @@
+What is Cloud Management
+Cloud computing management is maintaining and controlling the cloud services and resources be it public, private or hybrid. Some of its aspects include load balancing, performance, storage, backups, capacity, deployment etc. To do so a cloud managing personnel needs full access to all the functionality of resources in the cloud. Different software products and technologies are combined to provide a cohesive cloud management strategy and process.
+
+As we know Private cloud infrastructure is operated only for a single organization, so that can be managed by the organization or by a third party. Public cloud services are delivered over a network that is open and available for public use. In this model, the IT infrastructure is owned by a private company and members of the public can purchase or lease data storage or computing capacity as needed. Hybrid cloud environments are a combination of public and private cloud services from different providers. Most organizations store data on private cloud servers for privacy concerns, while leveraging public cloud applications at a lower price point for less sensitive information. The combination of both the public and private cloud are known as Hybrid cloud servers.
+
+Why Cloud Management
+Cloud is nowadays preferred by huge organizations as their primary data storage. A small downtime or an error can cause a great deal of loss and inconvenience for the organizations. So as to design, handle and maintain a cloud computing service specific members are responsible who make sure things work out as supposed and all arising issues are addressed.
+
+Cloud Management Platform
+A cloud management platform is a software solution that has a robust and extensive set of APIs that allow it to pull data from every corner of the IT infrastructure. A CMP allows an IT organization to establish a structured approach to security and IT governance that can be implemented across the organization's entire cloud environment.
+
+Cloud Management Tasks
+Auditing System Backups - It is required to audit the backups from time to time to ensure restoration of randomly selected files of different users. This might be done by the organization or by the cloud provider.
+
+Flow of data in the system - The managers are responsible for designing a data flow diagram that shows how the data is supposed to flow throughout the organization.
+
+Vendor Lock-In - The managers should know how to move their data from a server to another in case the organization decides to switch providers.
+
+Knowing provider’s security procedures - The managers should know the security plans of the provider, especially Multitenant use, E-commerce processing, Employee screening and Encryption policy.
+
+Monitoring the Capacity, Planning and Scaling abilities - The manager should know if their current cloud provider is going to meet their organization’s demand in the future and also their scaling capabilities.
+
+Monitoring audit log - In order to identify errors in the system, logs are audited by the managers on a regular basis.
+
+Solution Testing and Validation - It is necessary to test the cloud services and verify the results and for error-free solutions.
+
+Benefits of Effective Cloud Management
+Managing the cloud effectively brings several advantages that help organizations run smoothly and save money.
+
+Cost Optimization: Helps avoid unnecessary spending by tracking and controlling how cloud resources are used.
+
+Better Security & Compliance: Ensures sensitive data is protected and meets legal or industry-specific rules.
+
+High Performance & Uptime: Keeps systems running fast and reduces downtime, which is crucial for customer satisfaction.
+
+Clear Usage Insights: Offers full visibility into what’s being used, by whom, and how much it costs.
+
+Quick Problem Detection: Makes it easier to spot and fix issues before they cause major disruptions.
+
+Key Features of a Good Cloud Management Platform
+A good Cloud Management Platform (CMP) makes it easier to handle cloud resources efficiently.
+
+Multi-cloud & Hybrid Support: Works across different cloud providers (like AWS, Azure, GCP) and setups (private + public).
+
+Unified Dashboard: Shows everything in one place, usage, health, performance, so it’s easier to manage.
+
+Automation Tools: Saves time by automating tasks like scaling, backups, and updates.
+
+Cost Tracking: Helps monitor spending and predict future cloud costs to avoid budget surprises.
+
+DevOps Integration: Works well with tools like CI/CD, Terraform, etc., for smoother deployments and updates.
