@@ -1,0 +1,26 @@
+# Cloud Computing Infrastructure
+Cloud Computing which is one of the demanding technology of current scenario and which has been proved as a revolutionary technology trend for businesses of all sizes. It manages a broad and complex infrastructure setup to provide cloud services and resources to the customers. Cloud Infrastructure which comes under the backend part of cloud architecture represents the hardware and software component such as server, storage, networking, management software, deployment software and virtualization software etc. In backend, cloud infrastructure enables the complete cloud computing system.
+
+# Why Cloud Computing Infrastructure :
+Cloud computing refers to providing on demand services to the customer anywhere and anytime irrespective of everything where the cloud infrastructure represents the one who activates the complete cloud computing system. Cloud infrastructure has more capabilities of providing the same services as the physical infrastructure to the customers. It is available for private cloud, public cloud, and hybrid cloud systems with low cost, greater flexibility and scalability.
+
+# Cloud infrastructure components :
+Different components of cloud infrastructure supports the computing requirements of a cloud computing model. Cloud infrastructure has number of key components but not limited to only server, software, network and storage devices. Still cloud infrastructure is categorized into three parts in general i.e.
+
+Computing
+Networking
+Storage 
+The most important point is that cloud infrastructure should have some basic infrastructural constraints like transparency, scalability, security and intelligent monitoring etc.
+
+# Components of Cloud Infrastructure
+Hypervisor : Hypervisor is a firmware or a low level program which is a key to enable virtualization. It is used to divide and allocate cloud resources between several customers. As it monitors and manages cloud services/resources that's why hypervisor is called as VMM (Virtual Machine Monitor) or (Virtual Machine Manager).
+
+Management Software : Management software helps in maintaining and configuring the infrastructure. Cloud management software monitors and optimizes resources, data, applications and services.
+
+Deployment Software : Deployment software helps in deploying and integrating the application on the cloud. So, typically it helps in building a virtual computing environment.
+
+Network : It is one of the key component of cloud infrastructure which is responsible for connecting cloud services over the internet. For the transmission of data and resources externally and internally network is must required.
+
+Server : Server which represents the computing portion of the cloud infrastructure is responsible for managing and delivering cloud services for various services and partners, maintaining security etc.
+
+Storage : Storage represents the storage facility which is provided to different organizations for storing and managing data. It provides a facility of extracting another resource if one of the resource fails as it keeps many copies of storage.
