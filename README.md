@@ -1,2 +1,2 @@
 # AWS_Learnings
-postingprojects ,learnings about aws and devops
+posting here all th information of cloud computing, amazon wed services & devops.
