@@ -1,0 +1,124 @@
+# What is Virtualization?
+
+Virtualization is the process of creating a virtual representation of hardware such as server, storage, network or other physical machines. It Supports multiple copies of virtual machines(VMs) to execute on one physical machine each with their own operating system and programs. This optimizes hardware efficiency and flexibility and enables resources to be shared between multiple customers or organizations.
+
+Virtualization is a key to providing Infrastructure as a Service (IaaS) solutions for cloud computing, whereby the user has access to remote computing resources.
+
+# Why is Virtualization Important?
+
+Virtualization is important because it let's you get the most out of your computer or server resources. Consider it like being able to use one physical box as many smaller, independent "virtual" boxes. There are multiple virtual boxes, each having its own program to run and data to store, but they use the same physical box.
+
+1. Better use of Resources
+Instead of allowing for numerous unused machines, virtualization enables you to host multiple programs or systems on one computer, which is more effective.
+
+2. Cost Utilization
+Companies can save their money on hardware, power, and maintenance by using less physical equipment.
+
+3. Flexibility
+Virtual machines can be easily installed, relocated and resized to suit changing requirements. If a virtual machine requires more power, it can obtain it rapidly without requiring new hardware.
+
+4. Security
+Virtualization isolates various applications or systems from each other, so if one of them has an issue, it won't affect others.
+
+5. Simple Recovery
+In case something goes wrong, it's simple to back up or restore virtual machines, allowing companies to return to work quickly after an issue.
+
+# How does Virtualization Work
+
+Virtualizations uses special software known as hypervisor, to create many virtual computers (cloud instances) on one physical computer. The Virtual Machines behave like actual computers but use the same physical machine.
+
+1. Virtual Machines (Cloud Instances)
+After installing virtualization software on your computer, you can set up one or more virtual machines. The Virtual machines are similar to other applications on your computer. The Actual computer is "Host" and the Virtual Computers are "Guests". You can have several guests on a single host, and each guests can have its own operating system, which may be the same or different from the host.
+
+As a user you can see that every virtual machine behaves as a normal computer. It has its own configurations, programs, and settings. The resources, such as the processor (CPU), Memory (RAM), and storage, are all accessed by the virtual machines, but they appear and function exactly like they would in a real computer. You can update or modify the virtual machine's operating system and applications without touching the original computer.
+
+2. Hypervisors
+A hypervisor is the software that gets virtualization to work. It serves as an intermediary between the physical computer and the virtual machines. The hypervisor controls the virtual machines' use of the physical resources (such as the CPU and memory) of the host computer.
+
+For instance, if one virtual machine wants additional computing capability, it requests it from the hypervisor. The hypervisor ensures the request is forwarded to the physical hardware, and it's accomplished.
+
+There exist two categories of hypervisors:
+
+Type 1 Hypervisor (Bare-Metal Hypervisor):
+The hypervisor is installed directly onto the computer hardware, without an operating system sitting in between.
+It is highly efficient as it has a direct access to the resources of the computer.
+
+Type 2 Hypervisor:
+It is run over an installed operating system (such as Windows or macOS).
+It's employed when you need to execute more than one operating system on one machine.
+
+# Types of Virtualization
+
+Application Virtualization
+Network Virtualization
+Desktop Virtualization
+Storage Virtualization
+Server Virtualization
+Data virtualization
+Types of Virtualization
+Types of Virtualization
+
+1. Application Virtualization: Application virtualization enables remote access by which users can directly interact with deployed applications without installing them on their local machine. Your personal data and the applications settings are stored on the server, but you can still run it locally via the internet. It’s useful if you need to work with multiple versions of the same software. Common examples include hosted or packaged apps.
+
+Example: Microsoft Azure lets people use their applications without putting them on their own computers. Once this application is setup in the cloud then employees can use it from any device, like a laptop or tablet. It feels like the application is on their computer, but it’s really running on Azure’s servers. This makes things easier, faster, and safer for the company.
+
+2. Network Virtualization: This allows multiple virtual networks to run on the same physical network, each operating independently. You can quickly set up virtual switches, routers, firewalls, and VPNs, making network management more flexible and efficient.
+
+Example: Google Cloud is an example of Network Virtualization. Companies create their own networks using software instead of physical devices with the help of Google Cloud. They can set up things like IP addresses, firewalls, and private connections all in the cloud. This makes it easy to manage, change, and grow their network without buying any hardware. It saves time, money, and gives more flexibility.
+
+3. Desktop Virtualization: Desktop virtualization is a process in which you can create different virtual desktops that users can use from any device like laptop, tablet. It’s great for users who need flexibility, as it simplifies software updates and provides portability.
+
+Example: GeeksforGeeks is a Edtech company which uses services like Amazon WorkSpaces or Google Cloud (GCP) Virtual Desktops to give its team members access to the same coding setup with all the tools they required for the easy access of this team work. Now their team members can easily log in from any device like a laptop, tablet, or even a phone and use a virtual desktop that will run perfectly in the cloud. This makes it easy for GeeksforGeeks company to manage, update, and keep everything secure without requirement of physical computers for everyone.
+
+4. Storage Virtualization: This combines storage from different servers into a single system, making it easier to manage. It ensures smooth performance and efficient operations even when the underlying hardware changes or fails.
+
+Example: Amazon S3 is an example of storage virtualization because in S3 we can easily store any amount of data from anywhere. Suppose a MNC have lots of files and data of company to store. By Amazon S3 company can store all their files and data in one place and access these from anywhere without any kind of issue in secure way.
+
+5. Server Virtualization: This splits a physical server into multiple virtual servers, each functioning independently. It helps improve performance, cut costs and makes tasks like server migration and energy management easier.
+
+Example: A startup company has a powerful physical server. This company can use server virtualization software like VMware vSphere, Microsoft Hyper-V or KVM to create more virtual machines(VMs) on that one server.
+
+Each VM here is an isolated server, that runs on their own operating system( like Windows and Linux) and run it's own applications. For example, a company might run A web server on one VM, A database server on another VM, A file server on a third VM all on the same physical machine. This reduces costs, makes it easier to manage and back up servers, and allows quick recovery if one VM fails.
+
+6. Data Virtualization: This brings data from different sources together in one place without needing to know where or how it’s stored. It creates a unified view of the data, which can be accessed remotely via cloud services.
+
+Example: Companies like Oracle and IBM offer solutions for this.
+
+# Benefits of Virtualization
+
+More flexible and efficient allocation of resources. 
+Enhance development productivity. 
+It lowers the cost of IT infrastructure. 
+Remote access and rapid scalability. 
+High availability and disaster recovery. 
+Pay peruse of the IT infrastructure on demand. 
+Enables running multiple operating systems.
+
+# Drawback of Virtualization
+
+High Initial Investment: Clouds have a very high initial investment, but it is also true that it will help in reducing the cost of companies.
+Learning New Infrastructure: As the companies shifted from Servers to Cloud, it requires highly skilled staff who have skills to work with the cloud easily and for this, you have to hire new staff or provide training to current staff.
+Risk of Data: Hosting data on third-party resources can lead to putting the data at risk, it has the chance of getting attacked by any hacker or cracker very easily.
+For more benefits and drawbacks, you can refer to the Pros and Cons of Virtualization.
+
+# Characteristics of Virtualization
+
+Increased Security: The ability to control the execution of a guest program in a completely transparent manner opens new possibilities for delivering a secure, controlled execution environment. All the operations of the guest programs are generally performed against the virtual machine, which then translates and applies them to the host programs. 
+Managed Execution: In particular, sharing, aggregation, emulation, and isolation are the most relevant features.
+Sharing: Virtualization allows the creation of a separate computing environment within the same host.
+Aggregation: It is possible to share physical resources among several guests, but virtualization also allows aggregation, which is the opposite process.
+For more characteristics, you can refer to Characteristics of Virtualization.
+
+# Uses of Virtualization
+
+Resource Optimization: Maximizes hardware utilization by running multiple virtual machines on a single server.
+Cost Reduction: Reduces hardware and maintenance costs by consolidating servers.
+Scalability: Enables quick scaling of resources based on demand.
+Flexibility: Dynamically allocates resources to applications as needed.
+Disaster Recovery: Simplifies backup and recovery by easily restoring virtual machines.
+Multi-Tenancy: Supports multiple users on a single server securely and efficiently.
+Testing Environments: Provides isolated virtual environments for development and testing.
+Efficient Deployment: Speeds up application deployment with pre-configured virtual environments.
+Security Isolation: Keeps applications secure by isolating them in separate virtual machines.
+Energy Efficiency: Reduces power consumption by running fewer physical servers
+
