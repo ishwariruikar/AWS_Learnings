@@ -1,0 +1,52 @@
+# Cloud Servers
+A cloud server is essentially an Infrastructure as a Service-based cloud service model that is facilitated and typically virtual, compute server that is accessed by users over a network. Cloud servers are expected to give the same functions, bolster the equivalent operating systems (OSes) and applications, and offer the performance qualities like customary physical servers that run in a local data center. Cloud servers are regularly alluded to as virtual servers, virtual private servers, or virtual stages. Cloud servers can be configured to provide levels of performance, security, and control like those of a dedicated server. 
+Cloud Servers can without much of a stretch be backed up and moved between servers. Its management is incorporated in the Cloud software so managing and patching are increasingly proficient. 
+
+# Three primary models include: 
+Public cloud servers
+Private cloud servers
+Dedicated cloud servers 
+
+# Dedicated Servers
+A Dedicated Server is a kind of web hosting where a business rents a full computer server with Internet access from a data center. Unlike a conventional computer server in an office closest, the Dedicated Server is kept in a climate-controlled data center where the network and Internet uptime are kept up by expert engineers. The business would now be able to rent dedicated servers instead of purchasing and setting up a computer server at their office and employing additional staff to oversee and maintain the server. This permits businesses to eliminate the hassles of dealing with day-to-day server issues and focus on their business growth. 
+
+# Difference between On-Premises and On Cloud 
+
+On Premises : In on-premises, from use to the running of the course of action, everything is done inside; whereby backup, privacy, and updates moreover should be managed in-house. At the point when the item is gotten, it is then installed on your servers; requiring additional power laborers, database programming software and operating systems to be purchased. With no prior commitment, you anticipate complete ownership. 
+
+On Cloud : Cloud refers to the delivery of on-demand computing services over the internet on “Pay As U Use “services, in simple words rather than managing files and Services on the local storage device you can do the same over the Internet in a cost-efficient manner. With a Cloud-based enrolment model, there is no convincing motivation to purchase any additional establishment or licenses. 
+
+# Server Consolidation in Cloud Computing
+Server consolidation in cloud computing refers to the process of combining multiple servers into a single, more powerful server or cluster of servers. This can be done in order to improve the efficiency and cost-effectiveness of the cloud computing environment. Server consolidation is typically achieved through the use of virtualization technology, which allows multiple virtual servers to run on a single physical server. This allows for better utilization of resources, as well as improved scalability and flexibility. It also allows organizations to reduce the number of physical servers they need to maintain, which can lead to cost savings on hardware, power, and cooling. 
+Physical Servers, Virtualization Software, and Virtual Servers make up the three primary parts of the server consolidation architecture.
+
+Physical Servers: The server consolidation environment's hardware consists of physical servers. These servers are usually powerful machines with high processing speeds that are built to manage massive volumes of data. They are utilized to run virtual servers and host virtualization software.
+Virtualization: A single physical server can run several virtual servers thanks to virtualization software. Multiple virtual servers can share the resources of a single physical server thanks to the software's creation of an abstraction layer between the real hardware and virtual servers. 
+Virtual Servers: Physical servers are virtualized into virtual servers. They run on top of the physical servers and are produced and controlled by the virtualization software. Each virtual server can execute its own programs and services and is a separate instance of an operating system.
+Server consolidation creates virtual servers that share the resources of the physical servers by fusing a number of physical servers into a single virtualized environment utilizing virtualization software. This makes it possible to use resources more effectively and save money. Additionally, it makes it simple to manage existing servers, set up new ones, and scale resources up or down as necessary. 
+
+# Types of Server Consolidation
+Logical Consolidation: In logical server consolidation, multiple virtual servers are consolidated onto a single physical server. Each virtual server is isolated from the others and has its own operating system and applications, but shares the same physical resources such as CPU, RAM, and storage. This allows organizations to run multiple virtual servers on a single physical server, which can lead to significant cost savings and improved performance. Virtual servers can be easily added or removed as needed, which allows organizations to more easily adjust to changing business needs. 
+Physical Consolidation: Physical Consolidation is a type of server consolidation in which multiple physical servers are consolidated into a single, more powerful server or cluster of servers. This can be done by replacing multiple older servers with newer, more powerful servers, or by adding additional resources such as memory and storage to existing servers. Physical consolidation can help organizations to improve the performance and efficiency of their cloud computing environment.
+Rationalized Consolidation: Rationalized consolidation is a type of server consolidation in which multiple servers are consolidated based on their workloads. This process involves identifying and grouping servers based on the applications and services they are running and then consolidating them onto fewer, more powerful servers or clusters. The goal of rationalized consolidation is to improve the efficiency and cost-effectiveness of the cloud computing environment by consolidating servers that are running similar workloads.  
+
+# How to Perform Server Consolidation?
+Server consolidation in cloud computing typically involves several steps, including:
+
+Assessing the Current Environment: The first step in server consolidation is to assess the current environment to determine which servers are running similar workloads and which ones are underutilized or over-utilized. This can be done by analyzing the usage patterns and resource utilization of each server.
+Identifying and Grouping Servers: Once the current environment has been assessed, the next step is to identify and group servers based on their workloads. This can help to identify servers that are running similar workloads and can be consolidated onto fewer, more powerful servers or clusters.
+Planning the Consolidation: After identifying and grouping servers, the next step is to plan the consolidation. This involves determining the best way to consolidate the servers, such as using virtualization technology, cloud management platforms, or physical consolidation. It also involves determining the resources required to support the consolidated servers, such as CPU, RAM, and storage.
+Testing and Validation: Before consolidating the servers, it is important to test and validate the consolidation plan to ensure that it will meet the organization's needs and that the servers will continue to function as expected.
+Consolidating the Servers: Once the plan has been tested and validated, the servers can be consolidated. This typically involves shutting down the servers to be consolidated, migrating their workloads to the consolidated servers, and then bringing the servers back online.
+Monitoring and Maintenance: After the servers have been consolidated, it is important to monitor the consolidated servers to ensure that they are performing as expected and to identify any potential issues. Regular maintenance should also be performed to keep the servers running smoothly.
+Optimizing the Consolidated Environment: To keep the consolidated environment optimal, it's important to regularly evaluate the usage patterns and resource utilization of the consolidated servers, and make adjustments as needed.
+
+# Benefits of Server Consolidation
+Server consolidation in cloud computing can provide a number of benefits, including:
+
+Cost savings: By consolidating servers, organizations can reduce the number of physical servers they need to maintain, which can lead to cost savings on hardware, power, and cooling.
+Improved performance: Consolidating servers can also improve the performance of the cloud computing environment. By using virtualization technology, multiple virtual servers can run on a single physical server, which allows for better utilization of resources. This can lead to faster processing times and better overall performance.
+Scalability and flexibility: Server consolidation can also improve the scalability and flexibility of the cloud environment. By using virtualization technology, organizations can easily add or remove virtual servers as needed, which allows them to more easily adjust to changing business needs.  
+Management simplicity: Managing multiple servers can be complex and time-consuming. Consolidating servers can help to reduce the complexity of managing multiple servers, by providing a single point of management. This can help organizations to reduce the effort and costs associated with managing multiple servers. 
+Better utilization of resources: By consolidating servers, organizations can improve the utilization of resources, which can lead to better performance and cost savings. 
+Server consolidation in cloud computing is a process of combining multiple servers into a single, more powerful server or cluster of servers, in order to improve the efficiency and cost-effectiveness of the cloud computing environment. 
