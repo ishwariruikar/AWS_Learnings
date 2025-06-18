@@ -1,0 +1,45 @@
+What Is AWS And Why Is It Used?
+AWS stands for Amazon Web Services, It is an expanded cloud computing platform provided by Amazon Company. AWS provides a wide range of services with a pay-as-per-use pricing model over the Internet such as Storage, Computing power, Databases, Machine Learning services, and much more. AWS facilitates for both businesses and individual users with effectively hosting the applications, storing the data securely, and making use of a wide variety of tools and services improving management flexibility for IT resources.
+
+History Of AWS
+AWS was launched in 2006, starting with the release of Amazon S3 (Simple Storage Service), which transformed how businesses manage scalable storage. This was the start of AWS’s mission to offer cloud solutions that were both cost-effective and accessible to companies of all sizes.
+
+The introduction of Amazon EC2 (Elastic Compute Cloud) allowed users to rent virtual servers, significantly reducing the cost of hardware infrastructure setup. As the platform evolved, services like AWS Lambda brought serverless computing to the forefront, allowing developers to run code without managing servers.
+
+Over the years, AWS has continued to expand its range of services, adding tools like Elastic Beanstalk for easy app deployment and a variety of machine learning services to meet the growing demands of businesses worldwide. Today, AWS is a cloud powerhouse, offering hundreds of services to support businesses in every industry.
+
+How AWS Works?
+Amazon Web Services (AWS) delivers cloud services through a robust global infrastructure. Here's how it works:
+
+1. Global Data Centers (Regions & Availability Zones)
+AWS operates through multiple data centers located in different regions across the globe. Each region includes multiple Availability Zones (AZs) to ensure redundancy, low latency, and high availability.
+
+
+2. Core Infrastructure Backbone
+This global setup forms the backbone of AWS, supporting all its cloud services such as computing, storage, networking, and databases.
+
+3. Secure Cloud Networks with Amazon VPC
+Users can create Virtual Private Clouds (VPCs)—secure, isolated networks within AWS. This allows you to control IP ranges, subnets, and access controls for your cloud resources.
+
+4. Compute and Storage Services
+Amazon EC2 (Elastic Compute Cloud) provides scalable virtual servers for running applications.
+Amazon S3 (Simple Storage Service) offers highly durable and scalable cloud storage.
+5. Auto Scaling and Load Balancing
+AWS supports automatic scaling of applications using:
+
+Auto Scaling: Automatically adjusts the number of EC2 instances based on demand.
+Elastic Load Balancing (ELB): Distributes traffic across multiple servers for better performance and uptime.
+6. User-Friendly Management Console
+The AWS Management Console offers an easy-to-use web interface for:
+
+Launching and configuring services.
+Monitoring usage and billing.
+Managing security and access controls.
+7. Built for High Availability and Fault Tolerance
+
+AWS architecture is designed to:
+
+Handle failures with failover support.
+Maintain continuous uptime through resource replication.
+Offer a resilient platform for mission-critical applications.
+
