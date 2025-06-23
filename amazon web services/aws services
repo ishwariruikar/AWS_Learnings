@@ -1,0 +1,525 @@
+Day: 12/Feb/23
+IP Address
+•	A unique numerical label assigned to each device connected to a computer network or the internet, acting like a digital address for online communication.
+•	Decimal to binary conversion:
+o	8 bit = 1 byte
+o	128, 64, 32, 16, 8, 4, 2, 1
+•	Example of IP: 4.84.16.64/128 (Numbers up to 1563)
+•	If we turn off data, our mobile, Wi-Fi switch, or any device, we lose connection. The assigned IP address will be lost, so when we reconnect, a new IP will be assigned to us.
+________________________________________
+EC2 (Elastic Cloud Compute Cloud)
+•	EC2 is a combination of RAM & CPU.
+•	We prefer SSD (Solid State Drive) over HDD (Hard Disk Drive).
+•	SSD is faster than HDD because SSD contains block-based storage, making it more efficient.
+________________________________________
+OS (Operating System) [Kernel + GNU Apps]
+Kernel
+•	It is the core of the OS, acting as an intermediary between hardware & software.
+•	Detects the movement of the mouse and any input device.
+GNU Apps
+•	Collection of free software packages, including applications, libraries, and developer tools.
+•	Built-in apps.
+________________________________________
+Default Port Numbers
+•	HTTP: 80
+•	HTTPS: 443
+•	SSH: 22
+________________________________________
+Process & Explanation of Launching an EC2 Instance
+Step 1: Name
+•	Name the instance (keep it simple & related to its work).
+•	Example: linux, ubuntu, first
+Step 2: OS (AMI - Amazon Machine Image)
+•	We need to select any one OS from the list.
+o	Examples: Amazon Linux, macOS, Ubuntu, etc.
+•	Amazon Linux & Ubuntu are mostly used.
+•	Then select the server (make sure to opt for a free one).
+Step 3: Instance Type
+•	There are many instance types available according to:
+o	Our database center
+o	CPU needs
+o	Memory needs
+Step 4: Key Pair (.pem)
+•	Key pair is a .pem file which we create.
+•	This key pair file acts as a password for our instance.
+•	Once we lose our .pem file or key pair, we cannot access the instance again.
+•	We can create a new key pair each time we launch an instance, or we can reuse the previous key pair file.
+________________________________________
+Step 5: Security Group
+•	Security group is the step where we can add or remove port numbers.
+•	Also, there is an option where we can edit inbound rules.
+•	The IP Address 0.0.0.0/0 means it is allowed for everyone.
+•	We can edit the port numbers here.
+________________________________________
+Step 6: Storage
+•	8 GB storage is given to each and every instance by default.
+________________________________________
+Step 7: Number of Instances
+•	1 instance is selected by default.
+________________________________________
+RAM vs. Hard Disk
+•	RAM is temporary storage.
+•	Hard disk is permanent storage.
+________________________________________
+Server Setup Diagram (Explanation of Components)
+The server is a combination of:
+1.	EC2 (Elastic Compute Cloud): Combination of RAM & CPU.
+2.	EBS (Elastic Block Store):
+o	SSD for storage can be upgraded up to 64 TB.
+o	We can attach more than one.
+3.	ENI (Elastic Network Interface):
+o	Public & private IPs are assigned to it.
+________________________________________
+EBS (Elastic Block Store)
+•	The first EBS contains OS, and other attached EBS volumes do not contain OS.
+•	The EBS with OS is also called Root Volume.
+•	We can attach & detach the EBS to another server as well.
+________________________________________
+ENI (Elastic Network Interface)
+•	ENI is of two types: Primary & Secondary.
+________________________________________
+EC2 States
+1.	Start
+o	Pending → Running
+2.	Stop
+o	Stopping → Stopped
+3.	Terminate
+o	Shutting down → Terminated (Instance deleted)
+________________________________________
+PEM & PPK Files
+•	PEM is used when we connect to the server using PowerShell.
+•	PPK is used when we connect using PuTTY server.
+________________________________________
+
+Regions of AWS Cloud
+•	Few regions cannot be used:
+1.	China
+	Beijing
+	Ningxia
+2.	US
+	US-Gov 1
+	US-Gov 2
+15 Regions that require permission before usage:
+1.	Hyderabad - Indian Govt.
+2.	Keetowah - Drug smuggling
+3.	Hong Kong
+4.	Milan
+5.	UAE
+6.	Zurich
+7.	Bahrain
+8.	Jakarta
+9.	Melbourne
+10.	Malaysia
+11.	Thailand
+12.	Calgary
+13.	Spain
+14.	Tel Aviv
+15.	UAE (Repeated)	17 Regions that can be used without permission:
+1.	Mumbai
+2.	Singapore
+3.	Tokyo
+4.	Osaka
+5.	Seoul
+6.	Sydney
+7.	N. Virginia
+8.	Ohio
+9.	Oregon
+10.	Sao Paulo
+11.	Frankfurt
+12.	Paris
+13.	London
+14.	Stockholm
+15.	Ireland
+California
+________________________________________
+There is no extension for files in Linux
+Day 5 (26 Feb)
+Linux Commands (For file creation, read & write)
+1.	ls – List all files & folders
+2.	pwd – Display the directory (current folder) you're currently in
+For starting Linux EC2 instance:
+•	ssh -i [pem file path] ec2-user@public_k
+3.	mkdir – To make a directory (folder)
+o	We can create multiple directories at the same time
+4.	cd – To enter a directory / go to the home directory
+o	cd .. – To go back one directory
+o	cd ../.. – To go two levels back
+o	cd - – To go to the previous location
+________________________________________
+Day 6 (27 Feb)
+5.	touch – To make an empty file (temp files used for automation)
+6.	cat command
+o	Can create, read, write, append the file but cannot modify it
+o	cat > filename – For creating & opening a file
+	Press Enter to save the text
+	Type Ctrl + D to exit
+o	cat filename – To read the file
+o	cat >> filename – To re-open the existing file and append data
+________________________________________
+AWS & Linux Commands Notes
+AWS Concepts
+Elastic Block Store (EBS)
+•	The first EBS contains the OS, while other attached EBS volumes do not contain an OS.
+•	EBS with OS is also called Root Volume.
+•	We can attach and detach EBS to another server as well.
+Elastic Network Interface (ENI)
+•	ENI has two types: Primary & Secondary.
+EC2 States
+1.	Start → Pending → Running
+2.	Stop → Stopping → Stopped
+3.	Terminate → Shutting Down → Terminated (Instance deleted)
+PEM & PPK Files
+•	PEM is used when connecting to a server via PowerShell.
+•	PPK is used when connecting to a server via PuTTY.
+AWS Cloud Regions
+Regions that cannot be used:
+1.	China
+o	Beijing
+o	Ningxia
+2.	US
+o	US-Gov1
+o	US-Gov2
+Regions requiring special permission:
+1.	Hyderabad (Indian government approval required)
+2.	Cape Town (Drug smuggling concerns)
+3.	Hong Kong
+4.	Milan
+5.	UAE
+6.	Zurich
+7.	Bahrain
+8.	Tokyo
+9.	Melbourne
+10.	Malaysia
+11.	Thailand
+12.	Calgary
+13.	Spain
+14.	Tel Aviv
+15.	UAE (listed twice)
+
+	Regions available without any permission:
+1.	Mumbai
+2.	Singapore
+3.	Tokyo
+4.	Osaka
+5.	Seoul
+6.	Sydney
+7.	N. Virginia
+8.	Ohio
+9.	Oregon
+10.	São Paulo
+11.	Frankfurt
+12.	Paris
+13.	London
+14.	Stockholm
+15.	Ireland
+16.	California
+17.	Canada (West Central)
+Linux Commands for File Operations
+General Commands
+1.	ls → Lists all files & folders.
+2.	pwd → Displays the directory (folder) you are currently in.
+Connecting to Linux EC2 Instance
+•	Use SSH:
+•	ssh -i [pem file path] ec2-user@public_ip
+Directory Management
+1.	mkdir → Creates a directory (folder).
+o	Multiple directories can be created at the same time.
+2.	cd → Used to enter a directory.
+o	cd ~ → Go to the home directory.
+o	cd .. → Move one level back.
+o	cd - → Return to the previous location.
+File Creation & Manipulation
+1.	touch [filename] → Creates an empty file.
+o	Useful for automation or temporary files.
+Working with Files (cat Command)
+1.	cat filename → Reads the file.
+2.	cat > filename → Creates and opens a new file.
+o	Press Enter to save.
+o	Use Ctrl + D to exit.
+3.	cat >> filename → Opens an existing file for editing.
+________________________________________
+Nano Command
+Create, read, write, append & modify – everything is possible with this command.
+Task:
+Make a folder named Dasarath, then make three folders named Ram, Lakshman, and Bharat inside it. Then, create two files inside the Ram folder named Luv and Kush.
+Steps to Perform:
+1.	mkdir dasarath → (Creates the dasarath directory)
+2.	cd dasarath → (Enter into dasarath directory)
+3.	mkdir Ram Lakshman Bharat → (Creates directories inside dasarath)
+4.	cd Ram → (Enter into Ram directory)
+5.	sudo nano luv.txt → (Opens luv.txt file in nano editor)
+6.	sudo nano kush.txt → (To read/write kush.txt file)
+________________________________________
+Vi Command
+Create, read, write, append & modify files.
+Vi File Commands:
+•	vi filename → Opens the file.
+•	Esc → Compulsory key for command mode.
+•	:wq → Save file and exit.
+•	:q → Close the file without saving changes.
+________________________________________
+
+
+Comparison of File Operations Across Commands
+Operation	touch	cat	nano	vi
+Create	✓	✗	✓	✓
+Read	✗	✓	✓	✓
+Write	✗	✓	✓	✓
+Append	✗	✓	✓	✓
+Modify	✗	✗	✓	✓
+________________________________________
+Linux Command for Copy-Paste File
+cp filename foldername
+Used to move or copy a file from one folder to another.
+Examples:
+1.	cp adwala.txt two → (File will be copied to "two" folder)
+2.	cp adwala.txt two/ → (Same as above but with explicit path)
+3.	cp adwala.txt two/adwala.txt → (File copied with the same name in "two" folder)
+4.	cp adwala.txt two/dogwala.txt → (File copied but renamed to "dogwala.txt")
+________________________________________
+Command Examples and Explanation
+Creating and Writing to Files
+1.	nano 1.txt → (Creates and opens "1.txt" file)
+2.	nano 2.txt → (Creates and opens "2.txt" file)
+3.	cp 1.txt 3.txt → (Copies "1.txt" content to "3.txt")
+4.	cat 2.txt | tee -a 3.txt → (Appends "2.txt" content to "3.txt")
+5.	cat 3.txt → (Displays the content of "3.txt")
+Combining Multiple Files into One
+cat 1.txt 2.txt > 3.txt → (Merges "1.txt" and "2.txt" content into "3.txt")
+________________________________________
+Linux Command for Cut-Paste File
+mv filename foldername
+Moves (cuts and pastes) a file from one location to another.
+Examples:
+1.	mv my.txt one → (Moves "my.txt" to the "one" folder)
+2.	mv my.txt one/ → (Same as above but with explicit path)
+3.	mv my.txt one/ed_my.txt → (Moves and renames it to "ed_my.txt" inside "one")
+4.	mv my.txt one/you.txt → (Moves and renames it to "you.txt" inside "one")
+________________________________________
+Linux Commands for Directory Management & Deletion
+Creating Directories and Organizing Files
+1.	Make a folder named "Bollywood"
+o	mkdir bollywood
+2.	Inside "Bollywood", create four folders:
+o	cd bollywood
+o	mkdir salman abhishek vivek vicky
+3.	Move files within folders
+o	cd salman
+o	nano aish.txt (Creates file "aish.txt")
+o	nano kat.txt (Creates file "kat.txt")
+o	Move "aish.txt" to "vivek" then to "abhishek", also delete "vivek":
+o	mv aish.txt ../vivek/
+o	mv ../vivek/aish.txt ../abhishek/
+o	rm -r ../vivek
+o	Move "kat.txt" to "vicky":
+o	mv kat.txt ../vicky/
+________________________________________
+Copy-Paste & Deleting Folders
+For Directory Copy-Paste and Deletion
+1.	Copying a folder
+2.	cp -r one two
+(Copies folder "one" into "two")
+3.	Deleting Files & Folders
+o	Delete a single file:
+o	rm filename
+o	Delete all files ending with .txt:
+o	rm *.txt
+o	Delete all files starting with "file":
+o	rm file*
+o	Delete an entire folder and its contents:
+o	rm -r foldername
+
+
+Linux File & Directory Permissions
+Understanding Permissions
+•	r → Read
+•	w → Write
+•	x → Execute
+Permission Representation
+•	- → Represents a file
+•	d → Represents a directory
+Managing Permissions with chmod
+•	Grant execute permission to a file:
+•	chmod +x filename
+•	Remove execute permission from a file:
+•	chmod -x filename
+•	Grant write permission to a file:
+•	chmod +w filename
+•	Remove write permission from a file:
+•	chmod -w filename
+•	Grant execute permission to a directory and its contents:
+•	chmod -R +x directoryname
+________________________________________
+Task Example: Creating Yearly Directories
+Steps:
+1.	Create a directory named Year
+2.	mkdir Year
+3.	Inside Year, create directories for 2023, 2024, and 2025:
+4.	cd Year
+5.	mkdir 2023 2024 2025
+6.	In 2024, add 12 subdirectories for each month:
+7.	cd 2024
+8.	mkdir Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+9.	Copy all month directories from 2024 to 2025:
+10.	cp -r 2024/* 2025/
+________________________________________
+Linux File & Directory Permissions (Advanced Concepts)
+Permissions for Directories
+1.	Read (r) → Allows listing files inside a directory.
+2.	Write (w) → Allows creating or deleting files inside a directory.
+3.	Execute (x) → Allows entering the directory.
+________________________________________
+Granting Permissions to Users, Groups & Others
+Using chmod for File & Directory Permissions
+•	Grant execute permission to a user:
+•	chmod u+x filename
+•	Grant execute permission to a group:
+•	chmod g+x filename
+•	Grant execute permission to others:
+•	chmod o+x filename
+Setting All Permissions at Once Using Numeric Values
+Instead of using multiple commands, you can use numbers:
+•	Read (r) = 4
+•	Write (w) = 2
+•	Execute (x) = 1
+Example:
+•	chmod 777 filename → Grants full permissions to everyone.
+•	chmod 755 filename → Grants full access to owner, read & execute for others.
+________________________________________
+Recursive Permissions
+To apply permissions to all subdirectories and files inside a directory:
+chmod -R 755 directoryname
+________________________________________
+Using echo Command
+•	Print text on screen:
+•	echo "Hello, World!"
+•	Save text to a file:
+•	echo "Hello, World!" > filename.txt
+________________________________________
+File Ownership & Web Servers
+Changing File Ownership
+•	Change file owner:
+•	chown new_owner filename
+•	Change owner & group:
+•	chown new_owner:new_group filename
+________________________________________
+Hiding Files in Linux
+•	Prefix the filename with a . (dot) to hide it.
+•	mv file.txt .file.txt
+•	To view hidden files:
+•	ls -al
+________________________________________
+Static vs. Dynamic Websites
+Static Website
+1.	No database required.
+2.	Uses simple languages like HTML, CSS, JS.
+3.	Fixed content and layout.
+Dynamic Website
+1.	Requires a database.
+2.	Uses complex languages like PHP, ASP.NET, Servlet, etc..
+3.	Content & layout can change dynamically.
+________________________________________
+Web Servers
+•	Apache (Traditional)
+•	Nginx (Light & Powerful)
+•	Lighttpd
+•	Gunicorn (Django & Flask FastAPI)
+•	IIS (Internet Information Services)
+________________________________________
+Ports
+•	HTTP: Port 80
+•	HTTPS: Port 443
+________________________________________
+Here is the extracted content from the latest image:
+________________________________________
+Using Images in a Webpage (Without Downloading)
+To display an image in a webpage without downloading it, use the <img> tag in your HTML file:
+<img src="image_link" />
+This method allows the webpage to load images directly from the internet instead of storing them on your server.
+________________________________________
+SCP (Secure Copy Protocol)
+Steps for SCP (Transferring Files Securely)
+SCP is used for uploading images, videos, or files from a Windows desktop to a server.
+Command to Upload a File to Server:
+scp -i key.pem Desktop/filename ec2-user@public-ip:/path/to/destination
+•	scp: Secure copy command
+•	-i key.pem: Specifies the SSH key
+•	Desktop/filename: The file on your local machine
+•	ec2-user@public-ip:/path/to/destination: Destination on the server
+________________________________________
+Apache Web Server on Amazon Linux
+Installing Apache on Amazon Linux (EC2)
+1.	Connect to EC2 Instance via SSH
+2.	ssh -i private-key.pem ec2-user@public-ip
+3.	Install Apache (httpd)
+4.	sudo yum install httpd -y
+5.	Start the Apache Service
+6.	sudo service httpd start
+7.	Enable Apache to start on boot
+8.	sudo systemctl enable httpd
+9.	Check Apache Status
+10.	sudo service httpd status
+11.	Go to default web directory
+12.	cd /var/www/html
+13.	Create/Edit Web Page
+14.	sudo nano index.html
+15.	Copy Public IP into Browser
+o	Open the browser and enter the public IP of the instance.
+o	If the webpage doesn’t load, check the security group rules to allow HTTP (port 80) and HTTPS (port 443).
+________________________________________
+Downloading Images to Webpage from the Internet
+1.	Copy Image URL
+o	Find the direct link to the image.
+2.	Use wget to Download Image
+3.	sudo wget image_link
+4.	Open Browser and Add Image Path
+o	After downloading, access it using public-ip/image.jpg
+________________________________________
+AWS Notes: Apache2 and Nginx on Ubuntu EC2
+
+	Setting up Apache2 on Ubuntu EC2
+Steps:
+•	Launch an Ubuntu Server Instance
+Use AWS EC2 dashboard to launch an instance with Ubuntu OS.
+•	Connect to Instance using .pem File
+ssh -i <your-key>.pem ubuntu@<public-ip>
+•	Update the Package Manager
+sudo apt-get update
+•	Install Apache2
+sudo apt-get install apache2 -y
+•	Start Apache2 Service
+sudo service apache2 start
+•	Check Apache2 Status
+sudo service apache2 status
+•	Navigate to HTML Directory
+cd /var/www/html
+•	Edit or Create a Web Page
+i.	Remove the default index.html if required:
+ii.	sudo rm index.htmi
+iii.	Create a new file
+iv.	sudo nano index.html
+v.	Add some HTML content and save the file.
+
+•	9. Access via Browser
+Paste your public IP in a browser to see the Apache2 page.
+
+
+
+	Setting up Nginx on Ubuntu EC2
+Steps:
+•	Continue on the same or new Ubuntu instance
+•	Update the Package Manager
+sudo apt-get update
+•	Stop Apache2 if it's running
+sudo service apache2 stop
+•	Install Nginx
+sudo apt-get install nginx -y
+•	Start Nginx
+sudo service nginx start
+•	Check Nginx Status
+sudo service nginx status
+•	Navigate to Nginx HTML Directory
+I.	cd /var/www/html
+II.	ls
+•	Access via Browser
+Paste your public IP in a browser to verify Nginx is working.
