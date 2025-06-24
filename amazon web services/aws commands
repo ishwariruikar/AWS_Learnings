@@ -1,0 +1,789 @@
+1. Filesystem Basics
+1. What is the command to create an empty file?
+● touch filename
+2. How do you create a new directory?
+● mkdir directory_name
+3. How do you list all files in a directory?
+● ls
+4. How do you list all files, including hidden ones?
+● ls -a
+5. How do you display the current working directory?
+● pwd
+6. How do you move or rename a file?
+● mv source_file destination_file
+7. How do you copy a file?
+● cp source_file destination_file
+8. What command is used to delete a file?
+● rm filename
+9. How do you delete a directory and its contents?
+● rm -r directory_name
+10. How do you display the contents of a file?
+● cat filename
+11. How do you display the first 10 lines of a file?
+● head filename
+12. How do you display the last 10 lines of a file?
+● tail filename
+13. How do you check free disk space?
+● df -h
+14. How do you display disk usage of a directory?
+● du -sh directory_name
+15. How do you search for a file by name in a directory?
+● find /path/to/directory -name filename
+16. How do you compress a file using gzip?
+● gzip filename
+17. How do you decompress a gzip file?
+● gunzip filename.gz
+18. How do you archive multiple files using tar?
+● tar -czvf archive.tar.gz files
+19. How do you extract a tar.gz archive?
+● tar -xzvf archive.tar.gz
+20. How do you mount a filesystem?
+● mount device_name mount_point
+21. How do you unmount a filesystem?
+● umount mount_point
+22. How do you create a symbolic link?
+● ln -s target_file link_name
+23. How do you view file types in a directory?
+● file filename
+24. How do you remove an empty directory?
+● rmdir directory_name
+25. How do you check for file existence?
+● test -f filename
+2. File Permissions and Ownership
+26. How do you change file permissions?
+● chmod permissions filename
+27. How do you change file ownership?
+● chown user:group filename
+28. How do you view file permissions in a directory?
+● ls -l
+29. How do you recursively change permissions for a directory?
+● chmod -R permissions directory_name
+30. What does the chmod 777 command do?
+● Grants read, write, and execute permissions to everyone
+31. How do you view a file's access control list (ACL)?
+● getfacl filename
+32. How do you set a default ACL for a directory?
+● setfacl -d -m u:user:permissions directory_name
+33. How do you set permissions for a script to be executable?
+● chmod +x script.sh
+34. What is the significance of the sticky bit in Linux?
+● It restricts file deletion in shared directories like /tmp.
+35. How do you add the sticky bit to a directory?
+● chmod +t directory_name
+3. Process Management
+36. How do you view running processes?
+● ps -aux
+37. How do you kill a process by PID?
+● kill PID
+38. How do you find the PID of a running process by name?
+● pgrep process_name
+39. How do you display processes in real-time?
+● top or htop
+40. How do you stop a process gracefully?
+● kill -15 PID
+41. How do you stop a process forcefully?
+● kill -9 PID
+42. How do you start a background process?
+● command &
+43. How do you bring a background job to the foreground?
+● fg %job_id
+44. How do you monitor resource usage by a process?
+● pidstat
+45. How do you view system logs for a process?
+● journalctl -u service_name
+46. How do you create a custom alias for a command?
+● alias alias_name='command'
+47. How do you remove an alias?
+● unalias alias_name
+48. How do you run a command as another user?
+● sudo -u username command
+49. How do you list all environment variables?
+● printenv or env
+50. How do you export a variable in Linux?
+● export VAR=value
+4. Networking
+51. How do you find the IP address of your system?
+● ip addr or ifconfig
+52. How do you check active network connections?
+● ss -tuln or netstat -tuln
+53. How do you ping a host to check connectivity?
+● ping host
+54. How do you test port connectivity?
+● telnet hostname port
+55. How do you display routing information?
+● route
+56. How do you check open ports on your system?
+● lsof -i
+57. How do you download files from the internet?
+● wget URL
+58. How do you transfer files between systems using SCP?
+● scp source_file user@remote_host:/destination_path
+59. How do you use SSH to connect to a remote server?
+● ssh user@remote_host
+60. How do you set up a static IP address?
+● Edit the network configuration file (e.g., /etc/network/interfaces)
+5. User Management
+61. How do you create a new user in Linux?
+● adduser username
+62. How do you delete a user?
+● userdel username
+63. How do you lock a user account?
+● passwd -l username
+64. How do you unlock a user account?
+● passwd -u username
+65. How do you switch to another user?
+● su - username
+66. How do you view currently logged-in users?
+● who or w
+67. How do you check user account information?
+● id username
+68. How do you list all users on the system?
+● cat /etc/passwd
+69. How do you create a group in Linux?
+● groupadd group_name
+70. How do you add a user to a group?
+● usermod -aG group_name username
+71. How do you change a user’s default shell?
+● chsh -s /bin/bash username
+72. How do you change a user’s home directory?
+● usermod -d /new/home/dir username
+73. How do you create a system user without a home directory?
+● adduser --system --no-create-home username
+74. How do you set or reset a user’s password?
+● passwd username
+75. How do you check group memberships of a user?
+● groups username
+6. Package Management
+76. How do you install a package on Debian-based systems?
+● apt install package_name
+77. How do you update all packages on a Debian-based system?
+● apt update && apt upgrade
+78. How do you remove a package on Debian-based systems?
+● apt remove package_name
+79. How do you install a package on RHEL-based systems?
+● yum install package_name or dnf install package_name
+80. How do you remove a package on RHEL-based systems?
+● yum remove package_name or dnf remove package_name
+81. How do you search for a package in Debian repositories?
+● apt search package_name
+82. How do you list all installed packages?
+● dpkg -l (Debian) or rpm -qa (RHEL)
+83. How do you check which package a file belongs to?
+● dpkg -S filename (Debian) or rpm -qf filename (RHEL)
+84. How do you clean up cached packages on Debian-based systems?
+● apt clean
+85. How do you enable or disable a repository in RHEL-based systems?
+● yum-config-manager --enable repo_name or --disable repo_name
+7. System Monitoring and Performance
+86. How do you check system uptime?
+● uptime
+87. How do you display memory usage?
+● free -h
+88. How do you monitor disk I/O in real-time?
+● iostat
+89. How do you check CPU usage?
+● top or htop
+90. How do you check running services?
+● systemctl list-units --type=service
+91. How do you enable a service to start on boot?
+● systemctl enable service_name
+92. How do you check system load averages?
+● uptime or cat /proc/loadavg
+93. How do you monitor network traffic in real-time?
+● iftop or nload
+94. How do you list hardware information?
+● lshw
+95. How do you check kernel version?
+● uname -r
+96. How do you check currently mounted filesystems?
+● mount or df -h
+97. How do you list active cron jobs?
+● crontab -l
+98. How do you check log files?
+● tail -f /var/log/syslog or journalctl
+99. How do you analyze disk usage by directories?
+● du -h --max-depth=1
+10. Advanced Networking
+100. How do you configure a network interface?
+● ip addr add IP_ADDRESS dev interface
+101. How do you bring an interface up or down?
+● ip link set interface up or ip link set interface down
+102. How do you test DNS resolution?
+● nslookup domain_name
+103. How do you display ARP table entries?
+● arp -a
+104. How do you configure a firewall using iptables?
+● iptables -A INPUT -p tcp --dport port -j ACCEPT
+105. How do you save iptables rules?
+● iptables-save > /etc/iptables/rules.v4
+106. How do you check open ports on a system?
+● ss -tuln
+107. How do you trace the route to a host?
+● traceroute hostname
+108. How do you monitor packet flow?
+● tcpdump
+109. How do you edit the hosts file?
+● nano /etc/hosts
+11. Scripting and Automation
+110. How do you create a simple shell script?
+● #/bin/bash
+111. How do you make a script executable?
+● chmod +x script_name
+112. How do you run a script?
+● ./script_name
+113. How do you use variables in a shell script?
+● variable=value and use with $variable
+114. How do you accept input in a script?
+● read variable_name
+115. How do you pass arguments to a script?
+● Use $1, $2, etc., for positional arguments
+116. How do you write an if-else condition in a script?
+●
+bash if [ condition ]; then commands else commands fi
+117. How do you write a for loop in a script?
+●
+bash for i in {1..5}; do echo $i done
+118. How do you schedule a script using cron?
+● crontab -e and add the schedule entry
+119. How do you debug a script?
+● bash -x script_name
+12. Advanced Topics
+120. What is SELinux?
+● Security-Enhanced Linux for access control
+121. How do you check SELinux status?
+● sestatus
+122. How do you change SELinux mode?
+● setenforce 0 (permissive) or setenforce 1 (enforcing)
+123. How do you view running containers in Docker?
+● docker ps
+124. How do you stop a running Docker container?
+● docker stop container_id
+125. How do you create an SSH key pair?
+● ssh-keygen
+126. How do you use rsync for file transfer?
+● rsync -avz source destination
+127. How do you check the default gateway?
+● ip route
+128. How do you monitor file changes in real-time?
+● inotifywait
+129. How do you create a virtual environment in Python?
+● python3 -m venv env_name
+13. Disk Management
+130. How do you check swap usage?
+● swapon --show or free -h
+131. How do you list disk partitions?
+● lsblk
+132. How do you format a disk to ext4?
+● mkfs.ext4 /dev/sdX
+133. How do you create a swap partition?
+● mkswap /dev/sdX
+134. How do you check disk usage?
+● df -h
+135. How do you check inodes usage?
+● df -i
+136. How do you mount a disk?
+● mount /dev/sdX /mount_point
+137. How do you unmount a disk?
+● umount /mount_point
+138. How do you resize a partition?
+● Use resize2fs and fdisk
+139. How do you check SMART status of a disk?
+● smartctl -a /dev/sdX
+14. Process Management
+140. How do you list all running processes?
+● ps aux
+141. How do you kill a process by PID?
+● kill PID
+142. How do you kill a process by name?
+● pkill process_name
+143. How do you stop a process?
+● kill -STOP PID
+144. How do you continue a stopped process?
+● kill -CONT PID
+145. How do you view running processes in real-time?
+● top or htop
+146. How do you check process memory usage?
+● ps aux --sort=-%mem
+147. How do you check process CPU usage?
+● ps aux --sort=-%cpu
+148. How do you check process status?
+● ps -o stat= -p PID
+149. How do you find a process by name?
+● pgrep process_name
+150. How do you check the number of processes running?
+● ps aux | wc -l
+15. System Monitoring
+151. How do you monitor CPU usage?
+● top or htop
+152. How do you check system load?
+● uptime
+153. How do you monitor disk space?
+● df -h
+154. How do you monitor memory usage?
+● free -h
+155. How do you monitor swap usage?
+● swapon --show or free -h
+156. How do you check network usage?
+● ifstat
+157. How do you monitor network interfaces?
+● ip -s link
+158. How do you monitor real-time log files?
+● tail -f /var/log/syslog
+159. How do you check system uptime?
+● uptime
+160. How do you check system resource utilization?
+● vmstat
+16. Cloud and Automation Tools
+161. How do you install AWS CLI?
+● pip install awscli
+162. How do you configure AWS CLI?
+● aws configure
+163. How do you create an S3 bucket using CLI?
+● aws s3 mb s3://bucket_name
+164. How do you list running EC2 instances?
+● aws ec2 describe-instances
+165. How do you create an EC2 instance?
+● aws ec2 run-instances --image-id ami_id --count 1
+--instance-type t2.micro
+166. How do you deploy an application using Ansible?
+● Write a playbook and run ansible-playbook playbook.yml
+167. How do you configure Ansible inventory?
+● Edit /etc/ansible/hosts
+168. How do you use Terraform to create infrastructure?
+● Write a .tf file and run terraform apply
+169. How do you start a Kubernetes cluster?
+● Use kubeadm init
+170. How do you install Docker on a system?
+● Use apt-get install docker.io or yum install docker
+17. Advanced File Handling
+171. How do you copy a directory recursively?
+● cp -r source_directory destination_directory
+172. How do you move or rename a file?
+● mv old_name new_name
+173. How do you remove a file?
+● rm filename
+174. How do you remove a directory recursively?
+● rm -r directory_name
+175. How do you find files by name?
+● find / -name "filename"
+176. How do you search for text within files?
+● grep "text" file_name
+177. How do you replace text in files?
+● sed -i 's/old_text/new_text/g' file_name
+178. How do you concatenate two files?
+● cat file1 file2 > new_file
+179. How do you compress a file?
+● tar -czf file_name.tar.gz directory_name
+180. How do you decompress a file?
+● tar -xzf file_name.tar.gz
+18. Backup and Recovery
+181. How do you create a backup of a directory?
+● tar -cvf backup_name.tar.gz directory_name
+182. How do you restore a backup?
+● tar -xvf backup_name.tar.gz
+183. How do you use rsync for incremental backups?
+● rsync -avz source destination
+184. How do you schedule backups with cron?
+● crontab -e and add a backup command
+185. How do you check backup logs?
+● cat /var/log/backup.log
+186. How do you create a full system backup with dd?
+● dd if=/dev/sda of=backup.img
+187. How do you restore a system from dd backup?
+● dd if=backup.img of=/dev/sda
+188. How do you create an incremental backup with rsnapshot?
+● Configure /etc/rsnapshot.conf and run rsnapshot daily
+189. How do you mount a backup disk?
+● mount /dev/sdX /mount_point
+190. How do you unmount a backup disk?
+● umount /mount_point
+19. Security and Permissions
+191. How do you change file permissions in Linux?
+● chmod permissions file_name
+192. How do you change file ownership in Linux?
+● chown user:group file_name
+193. How do you create a new user in Linux?
+● useradd username
+194. How do you set a password for a user?
+● passwd username
+195. How do you delete a user in Linux?
+● userdel username
+196. How do you add a user to a group?
+● usermod -aG group_name username
+197. How do you list groups in Linux?
+● cat /etc/group
+198. How do you secure SSH access?
+● Disable root login by setting PermitRootLogin no in
+/etc/ssh/sshd_config
+199. How do you configure SSH key-based authentication?
+● Copy the public key to ~/.ssh/authorized_keys on the remote machine
+200. How do you view system logs in Linux?
+● journalctl or cat /var/log/syslog
+
+ls -----views file list
+ls -l ----show list of file with details list
+pwd -----print working directory
+mkdir ----- make directory (folder)Foldername
+mkdir -----folder1 folder2 folder3 (multiple folder)
+-----------------------------------------------------------------
+cd foldername -----change directory
+cd .. Enter to Back folder
+cd ../.. ----folder back to back
+cd ---home directory
+-----------------------------------------------------------------
+ls -R home directory list
+----------------------------------------------------------------
+create file....
+----------------------------------------------------------------
+touch
+cat ...create file read write append
+cat >my.txt create write
+cat >>my.txt exsting file append
+nano ...create new file with read write append modify (ctrl+s for save)
+nano my.txt view file
+(alt+M for mouse enable disable)
+vi / vim
+================================================================
+dir copy
+==============================================================
+cp -r dirname dirname
+mv dirname dirname ----move file dirc
+rm fname ---remove file
+rm -r filename multi file remove
+dirname
+mkdir make dirctory
+ls view files
+rmdir --remove empty dirc
+cp -r filename foldername---move dir
+cp -r foldername/* for under folder all copy included all file
+touch ---make file
+ls *p only view only enter the filename char
+clear ----screen clear
+cp ka* foldername/ only move filename char
+--------------------------------------------------------------------------------------
+========================================================================
+============
+Root User create
+-------------------------------------------------------------------------------------
+Sudo su --superuser
+whoami --which user type check
+ls -l who make file user details
+sudo touch file.txt -------only for one file make
+sudo yum install nginx Y or N
+sudo yum remove nginx
+---------------------------------------------------------------------------------------
+file permision
+----------------------------------------------------------------------------------
+R -- read G+ (grp permsion)
+w -- write
+x -- execute
+chmod U+RW filename --- permision allow
+chmod u-RW filename --- permison denied
+numericle code
+R=4 rwx-rwx-rwx
+421 421 421
+w=2
+x=1
+echo print the msg
+echo hiiii >> my.txt for hiii msg add to file my.txt
+./ ----file execute verify and execute file
+-------------------------------------------------------------
+su username ---switch user
+=============================================================
+chown root my.txt transfer file to root folder
+sudo chown root my.txt user change
+sudo chown root:root my.txt user & group change
+sudo chown -R root:root filename ----to change all files change group dir.
+ls -R recursive (file dir views tree structure)
+ls -r Reverce file sorted
+=============================================================
+Hide file
+=============================================================
+mv .... for rename file
+mv vaish.jpg .vaish.jpg (for hide file)
+ls -a (hinden file views)
+ls -a/ all hiden files details
+mv filename newfilename ...filerename
+cp ravi/ravi.txt . copy file from ant location in current folder
+=============================================================
+Log file views
+=============================================================
+acess.log log file
+head acess.log (views the top head lines)
+head -n 10 acess.log (views the top 10 lines)
+tail acess.log (views the bottom last lines)
+tail -n 5 acess.log (views the last 5 lines)
+history ---show enterd command history
+====================================================================
+==================================================================
+AWS apache install
+==================================================================
+====================================================================
+sudo yum install httpd -y (install apache with yes agree )
+httpd -v (apache verify check install status)
+sudo service httpd start (apache strat)
+sudo service httpd status (check active status)
+sudo systemctl enable httpd.service (autostart apache enable)
+<img src="cid.jpg"</img>
+---------------------------------------------------------------------
+local file uploade on server
+scp -i .\download\key.pem .\desktop\filename\ ec2-user@43.206.109.202:.
+-------------------------------------------------------------------
+Server file Download on local
+scp -i .\download\key.pem ec2-user@43.203.209.33:filename .\desktop
+----------------------------------------------------------------------
+Folder Zip File Upload on server
+scp -i .\Downloads\key.pem .\Downloads\css.zip ec2-user@65.0.89.232:.
+unzip for extract zip file
+----------------------------------------------------------------------
+create zip file in server dir
+zip file.zip file
+=======================================================================
+nginx
+=======================================================================
+sudo yum install nginx
+sudo service nginx start
+sudo service httpd stop ----stop the httpd service
+sudo service nginx status ----check status active or deactive
+sudo nano /etc/nginx/nginx.conf ---nginx configuration and port change
+sudo service nginx reload --------refresh the nginx service
+curl http://localhost:90 ---- view the default html page structur
+It is located /usr/share/nginx/html/
+========================================================================
+======
+Ubuntu
+========================================================================
+======
+sudo apt-get apache2 install -y
+sudo systemctl daemon-reload --------reload apache2
+sudo nano /etc/apache2/site-enabled/000.default
+sudo nano /etc/apache2/ports.conf
+sudo service apache2 reload ---- reload apache
+========================================================================
+===========
+L A M P (linux-apache-mysql-php)
+========================================================================
+===========
+sudo yum insall httpd -y
+sudo service httpd start
+sudo service httpd status
+cd /var/www/html
+sudo nano index.html
+sudo nano /etc
+========================================================================
+=========
+Mysql install
+========================================================================
+========
+sudo yum install mariadb105-server -y
+sudo service mariadb start
+sudo service mariadb status
+========================================================================
+=========
+install PHP
+========================================================================
+========
+sudo yum install php -y
+sudo service php-fpm start
+sudo service php-fpm status
+-----------------------------------------------------------------------------
+sudo yum update -y (update yum)
+========================================================================
+======
+Ubuntu ( LAMP)
+========================================================================
+=====
+Sudo apt-get install apache2 mysql-server php -y
+php -v
+sudo apt-get install php8.3-fpm -y
+sudo service apahce2 start
+sudo service mysql start
+sudo service php8.3-fpm start
+sudo nano /etc/nginx/sites-enabled/default -----nginx path
+========================================================================
+======
+L E M P (liux)
+========================================================================
+======
+sudo yum install nginx mariadb105-server php -y
+sudo service nginx start
+sudo service mariadb strt
+sudo service php-fpm start
+sudo nano /etc/nginx/nginx.conf
+sudo service nginx reload
+sudo service httpd stop
+sudo yum install nginx -y
+sudo service nginx start
+========================================================================
+===
+Mysql (mariaDB)
+========================================================================
+=
+sudo yum install mariadb105-server -y
+sudo service mariadb start
+sudo mysql
+ALTER USER root@localhost identified by 'Suraj@123'; ---set a password
+exit --- exit to mysql
+sudo mysql -u root -p ---mysql login with username & password
+Password : ********* (password is not show)
+----------------------------------------------------------------------------
+Mysql Query
+------------------------------------------------------------------------------
+CREATE DATABASE facebook; ----create database
+show databases; -----show all database
+use facebook; -----select a database
+create table users(id int,Name varchar(20), city varchar(20), phone varchar(15), email
+varchar(20));
+describe user; (desc users;) ---show colomn
+insert into users values (1,'suraj','pune','9595333985');
+select * from users
+select name, from users;
+select city as addres from users; ----select from address colomn
+select * from users
+>where city = 'nanded'; ----only show nanded users
+select name from users
+>where city = 'pune';
+select * from users
+>where name = 'suraj';
+select * from users where age>30;
+select * from users where city='mumbai' or age<30;
+select * from users where email is null;
+select * from users where email is not null;
+select * from users where city != 'mumbai';
+select * from users where age>= 25 AND age<=30;
+select * from users where age BETWEEN 25 AND 30;
+select * from users limit 3; --show top 3 records
+select * from limit 3 OFFSET 4; ---
+select * from users order by id;
+select * from users order by id desc; ---desccending order
+select * from users order by name;
+select * from users order by name desc; ---descending order show
+select * from users order by id desc limit 3;
+select * from users WHERE name like 'r%'; ---starting from R
+select * from users where name like '%j'; ---end from J
+select * from users wher name like '%r%' ---in a name r
+select * from users where name like '----'; -show only 4 charactor name
+select * from users city="mumbai or city='pune';
+select * from users city in ('mumbai','pune');
+select min(salary) from emp where dept='HR';
+select min(salary) from emp Where name like 'r%';
+select min(salary) from emp where salary=(select min(salary) from emp);
+select sum(salary) from emp where dept='IT';
+select sum(salary) from emp where dept='IT' AND salary >10000;
+------------------------------------------------------------------------
+Table Update
+-----------------------------------------------------------------------
+ALTER TABLE emp ADD COLUMN age int;
+alter table emp modify column age int default 18;
+alter table emp modify column name varchar(50);
+NOT NUll set a column----
+alter table emp modify column name varchar(50) NOT NULL;
+alter table emp modify column salary float not null default 5000;
+delete from emp where name="raj" or name="govida"
+alter table drop column age; ---delete column
+alter table emp rename column dept to department;
+----------------------------------------------------------------------
+update table data
+----------------------------------------------------------------------
+update emp set name='rvindra' where name='ravi';
+update emp set name='ravi' where id=4;
+update emp set departmenet='account' where department is null;
+------------------------------------------------------------------------
+delete from emp where id=3;
+RENAME TABLE old_table_name TO new_table_name; ---rename column name
+show create table emp; -----create query details
+ALTER TABLE emp modify column id int primary key; ---set primary key
+alter table emp ADD CONSTRAINT myunique unique(name); ---set unique key
+alter table emp add constraint myunique unique(lastname, firstname); --set multipale column
+alter table emp DROP CONSTRAINT myunique; ----delete unique key
+alter table emp drop primary key; ------- remove the primary key
+alter table emp modify column id int;
+------------------------------------------------------------------------
+truncate users; -----delete all table records
+drop table users; ---delete table
+drop database database_name; ---delete database
+-----------------------------------------------------------------------------
+Backup data in SQL file
+--------------------------------------------------------------------------
+mysqldump -u your_username -p database_name > backup.sql
+mysql -u root -p snachat < facebook.sql --restore .sql file
+--------------------------------------------------------------------------------------
+CREATE TABLE users (
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100) NOT NULL,
+age TINYINT UNSIGNED NOT NULL,
+city VARCHAR(100),
+email VARCHAR(255) UNIQUE NOT NULL
+);
+----------------------------------------------------------------------------------------
+Connector html php TO MYsql Server
+========================================================================
+=========
+sudo yum install php8.3-mysqlnd.x86_64 -y
+-------64kb limit multipale records at a time--------
+========================================================================
+=========
+Wordpress install
+========================================================================
+============
+sudo wget https://wordpress.org/latest.tar.gz
+-----------------------------------------------------------------------------
+FTP install
+------------------------------------------------------------------------------
+sudo yum install vsftpd -y
+========================================================================
+========
+Node.js
+========================================================================
+=====
+========================================================================
+ls - The most frequently used command in Linux to list directories
+pwd - Print working directory command in Linux
+cd - Linux command to navigate through directories
+mkdir - Command used to create directories in Linux
+mv - Move or rename files in Linux
+cp - Similar usage as mv but for copying files in Linux
+rm - Delete files or directories
+touch - Create blank/empty files
+ln - Create symbolic links (shortcuts) to other files
+clear - Clear the terminal display
+cat - Display file contents on the terminal
+echo - Print any text that follows the command
+less - Linux command to display paged outputs in the terminal
+man - Access manual pages for all Linux commands
+uname - Linux command to get basic information about the OS
+whoami - Get the active username
+tar - Command to extract and compress files in linux
+grep - Search for a string within an output
+head - Return the specified number of lines from the top
+tail - Return the specified number of lines from the bottom
+diff - Find the difference between two files
+cmp - Allows you to check if two files are identical
+comm - Combines the functionality of diff and cmp
+sort - Linux command to sort the content of a file while outputting
+export - Export environment variables in Linux
+zip - Zip files in Linux
+unzip - Unzip files in Linux
+ssh - Secure Shell command in Linux
+service - Linux command to start and stop services
+ps - Display active processes
+kill and killall - Kill active processes by process ID or name
+df - Display disk filesystem information
+mount - Mount file systems in Linux
+chmod - Command to change file permissions
+chown - Command for granting ownership of files or folders
+ifconfig - Display network interfaces and IP addresses
+traceroute - Trace all the network hops to reach the destination
+wget - Direct download files from the internet
+ufw - Firewall command
+iptables - Base firewall for all other firewall utilities to interface with
+apt, pacman, yum, rpm - Package managers depending on the distribution
+sudo - Command to escalate privileges in Linux
+cal - View a command-line calendar
+alias - Create custom shortcuts for your regularly used commands
+dd - Majorly used for creating bootable USB sticks
+whereis - Locate the binary, source, and manual pages for a command
+whatis - Find what a command is used for
+top - View active processes live with their system usage
+useradd and usermod - Add a new user or change existing user data
+passwd - Create or update passwords for existing users
